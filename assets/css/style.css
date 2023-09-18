@@ -1,7 +1,5 @@
-
 body {
   font-family: "Electrolize", sans-serif;
-  width: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +31,7 @@ footer {
 @media (max-width: 576px) {
   body {
     display: grid;
-    grid-template-rows: 1fr 1fr 5fr auto 1fr;
+    grid-template-rows: 2fr 1fr 7fr 2fr 1fr;
     grid-template-areas:
       "header"
       "bar"

@@ -33,8 +33,7 @@ footer {
 @media (max-width: 576px) {
   body {
     display: grid;
-    align-items: stretch;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: 1fr 1fr 5fr auto 1fr;
     grid-template-areas:
       "header"
       "bar"

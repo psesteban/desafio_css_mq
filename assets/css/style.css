@@ -1,3 +1,149 @@
+
+body {
+  font-family: "Electrolize", sans-serif;
+}
+
+button {
+  background-color: rgb(109, 100, 209);
+}
+
+header {
+  background-color: rgb(13, 10, 46);
+}
+
+footer {
+  background-color: rgb(13, 10, 46);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+main {
+  border: 2px;
+  border-color: blue;
+}
+
+.search {
+  background-color: rgb(109, 100, 209);
+  width: 100vh;
+}
+
+@media (max-width: 576px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    grid-area: header;
+    width: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+  }
+
+  .search {
+    grid-area: bar;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    width: 100vh;
+  }
+
+  .search h3{
+    align-self: center;
+    margin-bottom: 1%;
+  }
+
+  select {
+    align-self: center;
+    width: 70vh;
+  }
+
+  .card {
+    padding: 5%;
+    width: 60vh;
+  }
+
+  main {
+    display: flex;
+    width: 100vh;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
+    background-color: aliceblue;
+  }
+
+  #card_mobile {
+    display: flex;
+    color: aliceblue;
+    background-color: black;
+    width: 100vh;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(109, 100, 209);
+    margin: 7vh;
+    margin-bottom: 2px;
+  }
+
+  #card_mobile button{
+    color:aliceblue;
+   padding: 2vh;
+  }
+
+  #card_desktop {
+    display: none;
+  }
+
+  img {
+    width: 60vh;
+  }
+
+  .card h2 {
+    margin: 0;
+  }
+
+  .select_pag {
+    display: flex;
+    margin: 2vh;
+    width: 95vh;
+    grid-area: select;
+    justify-content: center;
+  }
+
+  footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h3 {
+    margin-bottom: 0;
+  }
+  menu {
+    padding-top: 3%;
+    padding-right: 10%;
+  }
+
+  .menu_responsive {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 3%;
+    align-items: center;
+    display: flex;
+  }
+}
 @media (min-width: 576px) {
   body {
     background-color: rgb(255, 255, 255);
@@ -95,7 +241,7 @@
     margin: 0;
   }
 
-  #select_pag {
+  .select_pag {
     display: none;
   }
 
@@ -130,128 +276,4 @@
     align-items: center;
     display: flex;
   }
-}
-
-@media (max-width: 576px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  header {
-    grid-area: header;
-    color: aliceblue;
-    display: flex;
-    justify-content: space-between;
-    font-size: large;
-  }
-
-  .search {
-    grid-area: bar;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2%;
-  }
-
-  .card {
-    padding: 5%;
-    width: 60vh;
-  }
-
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: main;
-    background-color: aliceblue;
-  }
-
-  #card_mobile {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #card_desktop {
-    display: none;
-  }
-
-  img {
-    width: 60vh;
-  }
-
-  .card h2 {
-    margin: 0;
-  }
-
-  #select_pag {
-    display: flex;
-    grid-area: select;
-    justify-content: center;
-  }
-
-  footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  footer h3 {
-    margin-bottom: 0;
-  }
-  menu {
-    padding-top: 3%;
-    padding-right: 10%;
-  }
-
-  .menu_responsive {
-    display: none;
-  }
-
-  .logo {
-    padding-left: 3%;
-    align-items: center;
-    display: flex;
-  }
-}
-body {
-  font-family: "Electrolize", sans-serif;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 24;
-}
-
-button {
-  background-color: rgb(109, 100, 209);
-}
-
-header {
-  background-color: rgb(13, 10, 46);
-}
-
-footer {
-  background-color: rgb(13, 10, 46);
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-}
-
-main {
-  border: 2px;
-  border-color: blue;
-}
-
-.search {
-  background-color: rgb(109, 100, 209);
-  width: 100vh;
 }

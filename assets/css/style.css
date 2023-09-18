@@ -1,6 +1,9 @@
 
 body {
   font-family: "Electrolize", sans-serif;
+  width: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -22,11 +25,6 @@ footer {
   align-items: center;
 }
 
-main {
-  border: 2px;
-  border-color: blue;
-}
-
 .search {
   background-color: rgb(109, 100, 209);
   width: 100vh;
@@ -34,8 +32,15 @@ main {
 
 @media (max-width: 576px) {
   body {
-    margin: 0;
-    padding: 0;
+    display: grid;
+    align-items: stretch;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "bar"
+      "main"
+      "select"
+      "footer";
   }
   
   header {
@@ -121,6 +126,7 @@ main {
   footer {
     grid-area: footer;
     display: flex;
+    color:aliceblue;
     flex-direction: column;
     width: 100vh;
     justify-content: center;
@@ -144,11 +150,13 @@ main {
     display: flex;
   }
 }
+
 @media (min-width: 576px) {
   body {
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
+    width: 100vh;
     display: grid;
     grid-template-columns: 1fr 8fr;
     grid-template-rows: 1fr 6fr 1fr;
@@ -247,6 +255,7 @@ main {
 
   footer {
     position:fixed;
+    color:aliceblue;
     width: 13%;
     bottom: 0;
     grid-area: footer;

@@ -129,11 +129,8 @@ footer {
   footer {
     grid-area: footer;
     display: flex;
-    position: fixed;
-    bottom: 0;
     color: aliceblue;
     flex-direction: column;
-    width: 100vh;
     justify-content: center;
     align-items: center;
   }
@@ -215,26 +212,25 @@ footer {
   a {
     text-decoration: none;
     color: aliceblue;
-    
   }
   .catalogo > ul {
     display: none;
     padding-left: 1px;
-}
+  }
 
   a:hover {
     color: rgb(109, 100, 209);
     font-size: large;
-}
-li:hover {
-  color: rgb(109, 100, 209);
-  font-size: large;
-}
+  }
+  li:hover {
+    color: rgb(109, 100, 209);
+    font-size: large;
+  }
 
-.catalogo:hover > ul {
-  display: flex;
-  color: aliceblue;
-}
+  .catalogo:hover > ul {
+    display: flex;
+    color: aliceblue;
+  }
 
   .search {
     grid-area: nav;

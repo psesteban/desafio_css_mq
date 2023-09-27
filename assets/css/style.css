@@ -168,8 +168,7 @@ footer {
     grid-template-areas:
       "header nav nav"
       "header main main"
-      "footer main main"
-      ;
+      "footer main main";
   }
 
   main {
@@ -213,6 +212,29 @@ footer {
     display: flex;
     padding: 7%;
   }
+  a {
+    text-decoration: none;
+    color: aliceblue;
+    
+  }
+  .catalogo > ul {
+    display: none;
+    padding-left: 1px;
+}
+
+  a:hover {
+    color: rgb(109, 100, 209);
+    font-size: large;
+}
+li:hover {
+  color: rgb(109, 100, 209);
+  font-size: large;
+}
+
+.catalogo:hover > ul {
+  display: flex;
+  color: aliceblue;
+}
 
   .search {
     grid-area: nav;

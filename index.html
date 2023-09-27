@@ -25,8 +25,13 @@
         </section>
         <menu>
             <ul class="menu_responsive">
-                <li>Inicio</li>
-                <li>Catálogo</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="catalogo"> Catálogo <ul>
+                    <li>Hélicos</li>
+                    <li>Motos</li>
+                    <li>Scooter</li>
+                    <li>Skate</li></ul>
+                </li>
                 <li>Ofertas</li>
                 <li>Contacto</li>
             </ul>
@@ -36,11 +41,11 @@
     </header>
     <section class="search">
         <h3>Mostrar:</h3>
-        <select id="list">
-            <option value="opcion1">Voladores</option>
-            <option value="opcion2">Motos</option>
-            <option value="opcion3">Scooter</option>
-            <option value="opcion4">Skate</option>
+        <select id="list" onchange="filterCards(this.value)">
+            <option value="Helico">Voladores</option>
+            <option value="Moto">Motos</option>
+            <option value="Scooter">Scooter</option>
+            <option value="Skate">Skate</option>
         </select>
     </section>
 
@@ -64,67 +69,67 @@
         <div class="card" data-tag="Helico" id="card_desktop">
             <img src="assets/img/2.jpeg" alt="Product Image">
             <h2>
-                Road G3
+                Road G4
             </h2>
             <button class="card-btn">Ver mas</button>
         </div>
-        <div class="card" data-tag="Helico" id="card_desktop">
+        <div class="card" data-tag="Skate" id="card_desktop">
             <img src="assets/img/3.jpeg" alt="Product Image">
             <h2>
-                Road G3
+                FGeeks
             </h2>
             <button class="card-btn">Ver mas</button>
         </div>
-        <div class="card" data-tag="Helico" id="card_desktop">
+        <div class="card" data-tag="Skate" id="card_desktop">
             <img src="assets/img/4.jpeg" alt="Product Image">
             <h2>
-                Road G3
+                FMirror
             </h2>
             <button class="card-btn">Ver mas</button>
         </div>
-        <div class="card" data-tag="Helico" id="card_desktop">
+        <div class="card" data-tag="Moto" id="card_desktop">
             <img src="assets/img/5.jpeg" alt="Product Image">
             <h2>
-                Road G3
+                Ho-Te
             </h2>
             <button class="card-btn">Ver mas</button>
         </div>
-        <div class="card" data-tag="Helico" id="card_desktop">
+        <div class="card" data-tag="Moto" id="card_desktop">
             <img src="assets/img/6.jpeg" alt="Product Image">
             <h2>
-                Road G3
+                Ho-Ti
             </h2>
             <button class="card-btn">Ver mas</button>
         </div>
-        <div class="card" data-tag="Helico" id="card_desktop">
+        <div class="card" data-tag="Moto" id="card_desktop">
             <img src="assets/img/7.jpeg" alt="Product Image">
             <h2>
-                Road G3
+                Ho-Blue
             </h2>
             <button class="card-btn">Ver mas</button>
         </div>
-        <div class="card" data-tag="Helico" id="card_desktop">
+        <div class="card" data-tag="Moto" id="card_desktop">
             <img src="assets/img/8.jpeg" alt="Product Image">
             <h2>
-                Road G3
+                Ho-Blue-C3
             </h2>
             <button class="card-btn">Ver mas</button>
         </div>
-        <div class="card" data-tag="Helico" id="card_desktop">
+        <div class="card" data-tag="Moto" id="card_desktop">
             <img src="assets/img/9.jpeg" alt="Product Image">
             <h2>
-                Road G3
+                Ho-Red
             </h2>
             <button class="card-btn">Ver mas</button>
         </div>
-        <div class="card" data-tag="Helico" id="card_desktop">
+        <div class="card" data-tag="Moto" id="card_desktop">
             <img src="assets/img/10.jpeg" alt="Product Image">
             <h2>
-                Road G3
+                Ho-Green
             </h2>
             <button class="card-btn">Ver mas</button>
         </div>
-        <div class="card" data-tag="Helico" id="card_desktop">
+        <div class="card" data-tag="Scooter" id="card_desktop">
             <img src="assets/img/11.jpeg" alt="Product Image">
             <h2>
                 Road G3

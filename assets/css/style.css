@@ -97,6 +97,7 @@
   footer {
     grid-area: footer;
     display: flex;
+    height: 100%;
     color: aliceblue;
     flex-direction: column;
     justify-content: center;

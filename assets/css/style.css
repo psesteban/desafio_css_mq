@@ -61,8 +61,7 @@
     justify-content: center;
     align-items: center;
     border: solid 2px rgb(109, 100, 209);
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin:1rem;
   }
 
   #card_mobile button {

@@ -1,41 +1,15 @@
-body {
-  font-family: "Electrolize", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  background-color: rgb(109, 100, 209);
-}
-
-header {
-  background-color: rgb(13, 10, 46);
-}
-
-footer {
-  background-color: rgb(13, 10, 46);
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-}
-
-.search {
-  background-color: rgb(109, 100, 209);
-}
-
 @media (max-width: 576px) {
   body {
-    display: grid;
-    width: 100%;
+    font-family: "Electrolize", sans-serif;
     height: 100%;
-    grid-template-rows: 2fr 1fr 8fr 2fr 1fr;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
     grid-template-areas:
       "header"
       "bar"
+      "main"
       "main"
       "select"
       "footer";
@@ -43,7 +17,6 @@ footer {
 
   header {
     grid-area: header;
-    width: 100%;
     color: aliceblue;
     display: flex;
     justify-content: space-between;
@@ -55,7 +28,6 @@ footer {
     display: flex;
     flex-direction: column;
     padding-bottom: 2%;
-    width: 100%;
   }
 
   .search h3 {
@@ -65,17 +37,15 @@ footer {
 
   select {
     align-self: center;
-    width: 70vh;
   }
 
   .card {
     padding: 5%;
-    width: 60vh;
+    margin-top: 0%;
   }
 
   main {
     display: flex;
-    width: 100vh;
     justify-content: center;
     align-items: center;
     grid-area: main;
@@ -86,14 +56,13 @@ footer {
     display: flex;
     color: aliceblue;
     background-color: black;
-    width: 100vh;
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
     border: solid 2px rgb(109, 100, 209);
-    margin: 7vh;
-    margin-bottom: 2px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   #card_mobile button {
@@ -106,7 +75,7 @@ footer {
   }
 
   img {
-    width: 60vh;
+    width: 15rem;
   }
 
   .card h2 {
@@ -116,7 +85,6 @@ footer {
   .select_pag {
     display: flex;
     margin: 2vh;
-    width: 95vh;
     grid-area: select;
     justify-content: center;
   }
@@ -157,27 +125,25 @@ footer {
   body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr;
-    grid-template-rows: 1fr 13fr 2fr;
+    grid-template-columns: 3fr 15fr;
+    grid-template-rows: 1fr 5fr;
     grid-template-areas:
-      "header nav nav"
-      "header main main"
-      "footer main main";
+      "header nav"
+      "header main"
+      "footer main";
   }
 
   main {
-    margin: 1vh;
     padding: 1%;
+    padding-top: 1rem;
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
-    row-gap: 1%;
-    column-gap: 1%;
+    column-gap: 1rem;
+    row-gap: 1rem;
   }
 
   img {
@@ -185,12 +151,10 @@ footer {
   }
   header {
     grid-area: header;
-    position: fixed;
     color: aliceblue;
     align-items: left;
     justify-content: start;
-    width: 15%;
-    height: 100vh;
+    height: 100%;
   }
 
   menu {
@@ -234,12 +198,15 @@ footer {
 
   .search {
     grid-area: nav;
+    padding-top: 2rem;
+    padding-bottom: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: center;
     padding-bottom: 2%;
-  }
+    height: 70%;
+  } 
 
   .search h3 {
     align-self: center;
@@ -249,8 +216,9 @@ footer {
 
   select {
     align-self: center;
-    width: 70vh;
-    padding-left: 14%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
   }
   .card {
     display: flex;
@@ -260,7 +228,7 @@ footer {
     justify-content: center;
     align-items: center;
     border: solid 2px rgb(109, 100, 209);
-    padding-bottom: 2vh;
+    padding-bottom: 1rem;
   }
 
   #card_mobile {
@@ -277,9 +245,7 @@ footer {
   }
 
   footer {
-    position: fixed;
     color: aliceblue;
-    width: 13%;
     bottom: 0;
     grid-area: footer;
     font-size: smaller;
@@ -309,3 +275,28 @@ footer {
     display: flex;
   }
 }
+
+
+button {
+  background-color: rgb(109, 100, 209);
+}
+
+header {
+  background-color: rgb(13, 10, 46);
+}
+
+footer {
+  background-color: rgb(13, 10, 46);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.search {
+  background-color: rgb(109, 100, 209);
+}
+
